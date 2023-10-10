@@ -114,9 +114,16 @@ body{
 .wrapper .preview-img{
     flex-grow: 1;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     margin-left: 20px;
     align-items: center;
+
+}
+
+.rotating {
+    transform: rotate(90deg);
+    /* Rotate by 45 degrees */
 }
 
 .preview-img img{
@@ -125,6 +132,8 @@ body{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transform-origin: center;
+    transition: transform 0.5s ease;
 }
 
 .controls button{
